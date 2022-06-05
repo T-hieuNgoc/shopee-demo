@@ -1,0 +1,134 @@
+/* mobile and table */
+@media (max-width: 1023px){
+    .hide-tablet-mobile{
+        display: none;
+    }
+    :root{
+        --header-height: 86px;
+        --nav-head-height: 0px;
+    }
+    #head{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    #body {
+        /* margin-top: calc(var(--header-height) + var(--head-sort-bar-height)
+        + var(--head-category-mob-tab)); */
+        margin: 0;
+    }
+    .head__logo-img {
+        display: none;
+    }
+    .head-sort-bar {
+        display: block;
+    }
+    ul.sort-bar-list {
+        display: flex;
+    }
+    /* thong tin gi hang khi click vao cart */
+    .info-cart{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin-top: 86px;
+        padding: 0 calc((100% - 644px) / 2);
+    }
+    .head_search-container {
+        order: 1;
+    }
+    .cart-img {
+        order: 2;
+    }
+    .mobile-menu_icon{
+        font-size: 28px;
+        display: block;
+    }
+    .mobile-menu {
+        padding: 16px;
+    }
+
+    /* overlay-menu */
+
+    .container-list-menu{
+        display: none;
+    }
+    
+    /* switch on of menu */
+    #input-menu-mobile:checked ~ .overlay-mobile{
+        display: block;
+    }
+    #input-menu-mobile:checked ~ .container-list-menu{
+        display: block;
+    }
+
+    /* head-category-mob-tab */
+    .mobile-category-top{
+        display: block;
+    }
+    /* search-header */
+    .list-search-content{
+        position: fixed;
+        top: 86px;
+        right: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1024px){
+    .hide-tablet{
+        display: none;
+    }
+    .head-cart {
+        font-size: 24px;
+        margin: 0px 26px;
+    }
+ 
+  
+}
+
+/* mobile */
+@media (max-width: 739px) {
+    .hide-mobile{
+        display: none;
+    }
+    
+    .cart-img {
+        font-size: 13px;
+        order: 2;
+    }
+    .head-cart {
+        font-size: 28px;
+        margin: unset;
+        color: var(--white-color);
+        padding: 16px;
+    }
+   
+    .pagination-item {
+        margin: 0 6px;
+    }
+    .pagination-item_link{
+        font-size: 18px;
+        min-width: 34px;
+    }
+    #foot{
+        padding-left:20px ;
+    }
+    h4.foot-heading {
+        text-align: center;
+    }
+    .foot-list a {
+        justify-content: center;
+    }
+    .foot-download {
+        justify-content: center;
+    }
+    .foot-qr{
+        margin-right: 34px;
+    }
+} 

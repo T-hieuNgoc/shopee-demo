@@ -1,0 +1,134 @@
+:root{
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color:#333;
+    --red-color:rgb(241, 34, 34);
+    --gold-color:rgb(228, 224, 19);
+    --main-color:rgb(74, 117, 54);
+    --disable-color:rgb(150, 150, 150);
+    --sub-main-color:rgb(105, 151, 99);
+    --header-height: 120px;
+    --nav-head-height: 26px;
+    --head-sort-bar-height:46px;
+    --head-category-mob-tab: 40px;
+    --search-head-height: calc(var(--header-height) - var(--nav-head-height));
+}
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+p{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.pt-10{
+    padding-top: 10px;
+    margin: 0 2px;
+}
+.gold-color{
+    color:var(--gold-color);
+}
+.disable-color{
+    color:var(--disable-color);
+}
+/* responsive */
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* test respon */
+.grid__col-2{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.667%;
+}
+.grid__col-2-5{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.grid__col-10{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.334%;
+
+}
+
+
+
+/* modal */
+.modal{
+    position: fixed;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    z-index: 20;
+    display: none;
+}
+.modal__container{
+    background-color: #fff;
+    margin: auto;
+}   
+
+/* pagination link */
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-item{
+    margin: 0 12px;
+}
+.pagination-item_active .pagination-item_link{
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+.pagination-item_link{
+    --height:30px;
+    display: block;
+    font-size: 20px;
+    color: #939393;
+    min-width: 40px;
+    height: var(--height);
+    line-height:var(--height);
+    text-align: center;
+    border-radius: 3px;
+    font-weight: 300;
+
+}
+
+
